@@ -2,11 +2,11 @@
 <html lang="pt-br">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="assets/styles/navbar.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="icon" href="assets/img/icons/LOGO-ICONE-CIRCULO-SEM-FUNDO.png">
@@ -24,29 +24,58 @@
 
     <head>
         <nav>
-            <img src="assets/img/Logo.svg" alt="Logo da Four Tech innovations" class="logo">
+            <div class="logo">
+                <img src="assets/img/Logo.svg" alt="Logo da Four Tech innovations" class="img-logo">
+                <h1>Four Tech Innovations</h1>
+            </div>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav_item">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Orçamentos</a></li>
+                <li><a href="index.html" class="item home">Home</a></li>
+                <li><a href="#" class="item sobre">Sobre</a></li>
+                <li><a href="#" class="item parceiros">Parceiros</a></li>
+                <li><a href="#" class="item orcamento">Orçamentos</a></li>
             </ul>
         </nav>
     </head>
     <main>
         <section>
             <div class="carrousel">
-                <figure class="img-carrousel">
-                    <img src="assets/img/simon-kadula-8gr6bObQLOI-unsplash.jpg" alt="">
-                    </figure=>
-                    <div class="txt-carrousel">
-                        <h2>Texto </h2>
+                <div class="cavalinhos">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="cavalinho first">
+                        <img src="assets/img/Carrosel/Img-1.jpg" alt="Imagem de Apresentação da Four Tech Innovations">
                     </div>
+                    <div class="cavalinho">
+                        <img src="assets/img/Carrosel/Img-2.jpg" alt="Imagem de Apresentação das areas de atuação">
+                    </div>
+                    <div class="cavalinho">
+                        <img src="assets/img/Carrosel/Img-3.jpg" alt="Imagem de Apresentação das areas de atuação">
+                    </div>
+                    <div class="cavalinho">
+                        <img src="assets/img/Carrosel/Img-4.jpg" alt="Imagem de Apresentação das areas de atuação">
+                    </div>
+                </div>
+                <div class="navegacao">
+                    <div class="botao-1"></div>
+                    <div class="botao-2"></div>
+                    <div class="botao-3"></div>
+                    <div class="botao-4"></div>
+
+                </div>
+                <div class="navegacao-manual">
+                    <label for="radio1" class="botao-manual btn1"></label>
+                    <label for="radio2" class="botao-manual btn2"></label>
+                    <label for="radio3" class="botao-manual btn3"></label>
+                    <label for="radio4" class="botao-manual btn4"></label>
+                </div>
             </div>
         </section>
         <section>
@@ -144,6 +173,6 @@
     </div>
 </body>
 <script src="assets/scripts/index.js"></script>
-<script src="js/mobile_navbar.js"></script>
+<script src="assets/scripts/mobile_navbar.js"></script>
 
 </html>

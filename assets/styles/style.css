@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 /* variáveis do css */
 :root {
     --white-color: rgb(223, 223, 223);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
     padding: 0;
@@ -15,99 +15,91 @@
 
 body {
     background-color: #D9D9D9;
-    max-width: 1920px;
-    width: 100%;
 }
-
-/* inicio header */
-.header-contact {
-    background-color: .00749D;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 15vh;
-    padding: 0 4rem;
-    background-color: #04b9c0;
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 20%;
-}
-
-.header-logo img {
-    height: 100%;
-    width: auto;
-}
-
-.header-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 40%;
-}
-
-.header-links a {
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--white-color);
-}
-
-/* fim header */
 
 /* Inicio carrousel */
-.carrousel {
-    display: flex;
-    justify-content: center;
-    max-height: 75vh;
+.carrousel{
     width: 100%;
-    background-color: #0c927c;
+    height: 80vh;
+    overflow: hidden;
 }
 
-.img-carrousel {
-    width: 100%;
+.carrousel input{
+    display: none;
 }
 
-.img-carrousel img {
-    margin: 0 auto;
-    height: 75vh;
+.cavalinhos{
     width: 100%;
-    filter: grayscale(20%) blur(10%);
-} 
-
-.txt-carrousel {
+    height: 90vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
 
+.cavalinho{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.cavalinho img{
+    width: 200vh;
+    height: 80vh;
+}
+
+.navegacao-manual{
     position: absolute;
-    top: 50rem;
-
-    height: 3rem;
-    width: 500px;
-
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgb(18, 18, 19);
-    background-color: .024959;
-    color: var(--white-color);
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    gap: 40px;
 }
+
+
+.botao-manual{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.btn1:hover{
+    background-color: #0f2cad;
+}
+
+.btn2:hover{
+    background-color: #ce7107;
+}
+
+.btn3:hover{
+    background-color: #802019;
+}
+
+.btn4:hover{
+    background-color: #c4c70c;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+
 
 /* fim carrousel */
 
 /* MAIN */
-main {
-    margin: 2rem 0;
-    padding: 2rem 0rem;
-}
 
 .area-atuacao h2{
     text-align: center;
@@ -125,7 +117,7 @@ main {
 .red {
     height: 150px;
     width: 150px;
-    background-color: .802019;
+    background-color: #802019;
     border-radius: 10%;
     border: 1px solid .000;
 }
